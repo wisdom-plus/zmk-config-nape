@@ -2,7 +2,7 @@
 
 // マウス移動とスクロールのデフォルト値を設定
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 900
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 120
 
 #include <input/processors.dtsi>
@@ -18,7 +18,7 @@
     delay-ms = <0>;              // 遅延なし
     trigger-period-ms = <10>;    // 10ミリ秒ごとにトリガー
     time-to-max-speed-ms = <0>;  // 即座に最大速度に
-    acceleration-exponent = <1>;  // 線形加速
+    acceleration-exponent = <0>;  // 線形加速
 };
 
 // マウススクロールの設定
